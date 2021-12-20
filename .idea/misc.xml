@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Camera/app/src/main/res/drawable/line.xml" value="0.2111111111111111" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Camera/app/src/main/res/layout/activity_main.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Camera/app/src/main/res/layout/activity_show_content.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Camera2x/app/src/main/res/drawable/line.xml" value="0.9035714285714286" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Camera2x/app/src/main/res/drawable/shape_btn.xml" value="0.2276923076923077" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Camera2x/app/src/main/res/layout/activity_main.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8 (4)" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

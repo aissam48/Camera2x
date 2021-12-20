@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/btn_takePicture"
+        android:layout_width="65sp"
+        android:layout_height="65sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_circle"
+        android:layout_margin="50sp"
+        android:elevation="50sp"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:id="@+id/take_video"
+        android:layout_width="65sp"
+        android:layout_height="65sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_circle_red"
+        android:layout_margin="50sp"
+        android:elevation="50sp"
+        android:padding="22sp"
+        android:background="@drawable/ic_circle"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/detect_take_video"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        app:layout_constraintStart_toStartOf="@id/take_video"
+        app:layout_constraintTop_toTopOf="@id/take_video"
+        app:layout_constraintBottom_toBottomOf="@id/take_video"
+        app:layout_constraintEnd_toEndOf="@id/take_video"
+        android:src="@drawable/line"
+        android:elevation="5sp"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/btn_switchCamera"
+        android:layout_width="55sp"
+        android:layout_height="55sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_takePicture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_switch"
+        android:layout_margin="40sp"
+        android:elevation="40sp"
+
+        />
+
+    <ImageView
+        android:id="@+id/btn_viewImage"
+        android:layout_width="55sp"
+        android:layout_height="55sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_takePicture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="40sp"
+        android:elevation="40sp"
+        android:visibility="gone"
+        android:background="@color/white"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btn_takePicture"
+        >
+
+        <TextView
+            android:id="@+id/switch_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Photo"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@id/switch_video"
+            />
+
+        <TextView
+            android:id="@+id/switch_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/switch_photo"
+            android:text="Video"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="15sp"
+            />
+
+        <Chronometer
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/white"
+            android:layout_marginBottom="40sp"
+            android:visibility="gone"
+
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
